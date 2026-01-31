@@ -5,7 +5,7 @@ services:
     image: postgres:16
     container_name: base-postgres
     environment:
-      POSTGRES_DB: base-db
+      POSTGRES_DB: base_db
       POSTGRES_USER: base
       POSTGRES_PASSWORD: base123
     ports:
