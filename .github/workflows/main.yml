@@ -14,13 +14,13 @@ jobs:
       postgres:
         image: postgres:16
         env:
-          POSTGRES_DB: base_ci
+          POSTGRES_DB: base_db
           POSTGRES_USER: base
-          POSTGRES_PASSWORD: base
+          POSTGRES_PASSWORD: base123
         ports:
           - 5432:5432
         options: >-
-          --health-cmd="pg_isready -U base -d base_ci"
+          --health-cmd="pg_isready -U base -d base_db"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
